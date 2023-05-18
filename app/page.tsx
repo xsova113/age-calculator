@@ -35,12 +35,12 @@ export default function Home() {
   };
 
   return (
-    <>
-      <div className="bg-white my-44 p-11 rounded-2xl rounded-br-[140px] shadow-md flex flex-col justify-center max-w-[680px]">
+    <div className="px-6 mx-auto">
+      <div className="bg-white my-44 p-11 rounded-2xl rounded-br-[140px] shadow-md flex flex-col sm:justify-start justify-center w-[500px] sm:w-[600px]">
         <form onSubmit={handleSubmit(onSubmit)}>
           <Input register={register} errors={errors} />
           <div className="relative flex my-12 items-center">
-            <hr className="border-1 border-gray-300 sm:min-w-[480px] w-full" />
+            <hr className="border-1 border-gray-300 w-[400px] sm:w-[480px]" />
             <button
               type="submit"
               className="absolute right-[150px] sm:right-0 bg-[#864cfd] p-4 rounded-full hover:bg-black text-white"
@@ -55,7 +55,7 @@ export default function Home() {
           </div>
         </form>
 
-        <div className="flex flex-col font-[1000] text-[62px]">
+        <div className="flex flex-col sm:mx-0 mx-auto font-[1000] text-[62px]">
           <i>
             <span className="text-[#864cfd]">{year}&nbsp;</span>years
           </i>
@@ -68,6 +68,6 @@ export default function Home() {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }

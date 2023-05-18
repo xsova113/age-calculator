@@ -10,7 +10,7 @@ const Input: React.FC<InputProps> = ({ register, errors }) => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className={`flex space-x-5`}>
+    <div className={`flex space-x-5 sm:justify-normal justify-center`}>
       <div className="flex flex-col">
         <label
           htmlFor={"day"}
@@ -28,7 +28,7 @@ const Input: React.FC<InputProps> = ({ register, errors }) => {
               message: "Must be a day",
             },
           })}
-          className={`hover:border-indigo-500 border-2 rounded-md w-[120px] py-3 px-4 text-2xl font-extrabold mb-2 ${
+          className={`hover:border-indigo-500 border-2 rounded-md w-[90px] sm:w-[120px] py-3 px-4 text-xl font-extrabold mb-2 ${
             errors.day &&
             "border-[#FF5757] hover:border-[#FF5757] focus:border-[#FF5757]"
           }`}
@@ -58,7 +58,7 @@ const Input: React.FC<InputProps> = ({ register, errors }) => {
               message: "Must be a valid month",
             },
           })}
-          className={`hover:border-indigo-500 border-2 rounded-md w-[120px] py-3 px-4 text-2xl font-extrabold mb-2 ${
+          className={`hover:border-indigo-500 border-2 rounded-md w-[90px] sm:w-[120px] py-3 px-4 text-xl font-extrabold mb-2 ${
             errors.month &&
             "border-[#FF5757] hover:border-[#FF5757] focus:border-[#FF5757]"
           }`}
@@ -88,7 +88,7 @@ const Input: React.FC<InputProps> = ({ register, errors }) => {
               message: "Must be a valid year",
             },
           })}
-          className={`hover:border-indigo-500 border-2 rounded-md w-[120px] py-3 px-4 text-2xl font-extrabold mb-2 ${
+          className={`hover:border-indigo-500 border-2 rounded-md w-[90px] sm:w-[120px] py-3 px-4 text-xl font-extrabold mb-2 ${
             errors.year &&
             "border-[#FF5757] hover:border-[#FF5757] focus:border-[#FF5757]"
           }`}
