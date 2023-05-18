@@ -14,7 +14,9 @@ const Input: React.FC<InputProps> = ({ register, errors }) => {
       <div className="flex flex-col">
         <label
           htmlFor={"day"}
-          className={`font-semibold text-lg ${errors.day && "text-[#FF5757]"}`}
+          className={`font-semibold text-lg text-gray-600 ${
+            errors.day && "text-[#FF5757]"
+          }`}
         >
           DAY
         </label>
@@ -42,7 +44,7 @@ const Input: React.FC<InputProps> = ({ register, errors }) => {
       <div className="flex flex-col">
         <label
           htmlFor="month"
-          className={`font-semibold text-lg ${
+          className={`font-semibold text-lg text-gray-600 ${
             errors.month && "text-[#FF5757]"
           }`}
         >
@@ -72,7 +74,9 @@ const Input: React.FC<InputProps> = ({ register, errors }) => {
       <div className="flex flex-col">
         <label
           htmlFor="year"
-          className={`font-semibold text-lg ${errors.year && "text-[#FF5757]"}`}
+          className={`font-semibold text-lg text-gray-600 ${
+            errors.year && "text-[#FF5757]"
+          }`}
         >
           YEAR
         </label>
